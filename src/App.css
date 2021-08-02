@@ -16,3 +16,8 @@ img{
 input{
   margin-top: 20px;
 }
+.name-error{
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}

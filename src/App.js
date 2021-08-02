@@ -8,7 +8,8 @@ class App extends React.Component{
     super()
     this.state={
       title:'Hello There ! From BridgeLabz',
-      username:''
+      username:'',
+      nameError:''
     }
   }
   onClick = ($event) =>{
@@ -16,8 +17,15 @@ class App extends React.Component{
   }
 
   onNameChange = (event) => {
+    const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
     console.log("Value is ", event.target.value);
     this.setState({username:event.target.value})
+    if(nameRegex.test(event.target.value)){
+      this.setState({nameError:''})
+    }else{
+      this.setState({nameError:'Invalid Name'});
+    }
+
   }
   render(){
     return (
@@ -28,6 +36,7 @@ class App extends React.Component{
       </div>
       <div>
         <input placeholder="Enter Your Name" onChange={this.onNameChange} />
+        <span className="name-error">{this.state.nameError}</span>
       </div>
       </div>
     );
