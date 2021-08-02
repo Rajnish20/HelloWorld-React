@@ -1,3 +1,8 @@
+.app-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1{
   text-align: center;
   font-size: xx-large;
@@ -5,7 +10,9 @@ h1{
 img{
   margin:0 auto;
   display: block;
-  width: 25%;
   box-shadow: 2px 5px 10px lightblue;
   cursor: pointer;
+}
+input{
+  margin-top: 20px;
 }
