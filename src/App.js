@@ -10,11 +10,14 @@ class App extends React.Component{
       title:'Hello There ! From BridgeLabz'
     }
   }
+  onClick = ($event) =>{
+    window.open('https://unsplash.com/s/photos/anime',"_blank")
+  }
   render(){
     return (
       <div>
         <h1>{this.state.title}</h1>
-        <img src={image} alt=""/>
+        <img onClick={this.onClick} src={image} alt=""/>
       </div>
     );
   }
