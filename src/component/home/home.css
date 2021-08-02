@@ -1,0 +1,23 @@
+.app-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    text-align: center;
+    font-size: xx-large;
+  }
+  img{
+    margin:0 auto;
+    display: block;
+    box-shadow: 2px 5px 10px lightblue;
+    cursor: pointer;
+  }
+  input{
+    margin-top: 20px;
+  }
+  .name-error{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+  }
