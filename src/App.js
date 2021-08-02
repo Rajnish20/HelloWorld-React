@@ -1,6 +1,7 @@
 
 import './App.css';
 import React from 'react';
+import image from './assets/anime.jpg'
 
 class App extends React.Component{
   constructor(){
@@ -13,6 +14,7 @@ class App extends React.Component{
     return (
       <div>
         <h1>{this.state.title}</h1>
+        <img src={image} alt=""/>
       </div>
     );
   }
